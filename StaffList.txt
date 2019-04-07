@@ -1,0 +1,64 @@
+Staff_ID:PEC00344
+Full_Name:Jon Cliffton
+Telephone:23739680
+HKID:R765292(4)
+
+Staff_ID:PEC00357
+Full_Name:Journey Doyle
+Telephone:30329870
+HKID:F485008(0)
+ 
+Staff_ID:PEC00472
+Full_Name:Damien Keller
+Telephone:22139376
+HKID:G025141(A)
+
+Staff_ID:PEC01243
+Full_Name:Kyleigh Best
+Telephone:37449343
+HKID:K190889(8)
+  
+Staff_ID:PEC01249
+Full_Name:Karina Suarez
+Telephone:98039349
+HKID:N725145(7)
+ 
+Staff_ID:PEC01277
+Full_Name:Jaron Mckenzie
+Telephone:59362372
+HKID:R001903(7)
+
+Staff_ID:PEC01331
+Full_Name:Avery Yoder
+Telephone:94942732
+HKID:P445640(1)
+
+Staff_ID:PEC01516
+Full_Name:Emery Ramirez
+Telephone:95602058
+HKID:K100292(9)
+       
+Staff_ID:PEC02255
+Full_Name:Owen Contreras
+Telephone:53309192
+HKID:Q743492(4)
+
+Staff_ID:PEC02544
+Full_Name:Zayne Cardenas
+Telephone:29419568
+HKID:T712534(2)
+		
+Staff_ID:PEC02631
+Full_Name:Greyson Ramirez
+Telephone:31273381
+HKID:E194218(6)
+
+Staff_ID:PEC02682
+Full_Name:Brendon Sharp
+Telephone:20252220
+HKID:J155435(1)
+
+Staff_ID:PEC03487
+Full_Name:Kaleb George
+Telephone:23099799
+HKID:L244894(A)
