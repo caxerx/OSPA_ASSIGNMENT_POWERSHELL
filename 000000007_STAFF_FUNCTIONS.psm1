@@ -12,7 +12,7 @@ function Get-TrainerPassword {
     Param ([object]$staff)
     $pw = ""
     $staffNames = ($staff.Full_Name -split " ")
-    $pw += $staffNames[0].SubString(1)
+    $pw += $staffNames[0].SubString($staffNames[0].Length - 2, 2)
     $pw += Get-PasswordSymbol($staff.HKID)
     $pw += $staff.HKID.SubString(0, 5)
     Write-Output $pw
