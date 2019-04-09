@@ -18,7 +18,7 @@ $staff = @{
 #Iterate over the staff list
 foreach ($i in $staffContent) {
     #Goto next object when a line seperator
-    if ($i -eq "") {
+    if ([string]::IsNullOrWhiteSpace($i)) {
         #Supress output
         $staffs.Add($staff) > $null
         $staff = @{
@@ -31,6 +31,10 @@ foreach ($i in $staffContent) {
     $prop = $lineData[0]
     $data = $lineData[1] 
     $staff.$prop = $data
+}
+
+if($staff.Count -ne 0){
+    $staffs.Add($staff) > $null
 }
 
 Write-Output $staffs
