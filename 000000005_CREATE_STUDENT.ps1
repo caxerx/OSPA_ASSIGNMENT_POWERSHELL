@@ -33,7 +33,7 @@ foreach ($stu in $students) {
     }
     if (!(Test-PasswordSymbol $stu.PASSWORD)) {
         "Student " + $stu.FIRSTNAME + " " + $stu.LASTNAME + " (" + $stu.TID + ") inputted a password that's not contains a special symbol" >> .\ERR_TraineePassword.txt
-        $enabled = 10
+        $enabled = 0
     }
 
     New-ADUser -Name $stu.TID  -DisplayName "$($stu.FIRSTNAME) $($stu.LASTNAME)" -AccountPassword (ConvertTo-SecureString ($stu.PASSWORD) -AsPlainText -Force) -Enabled $enabled -Description "Student" -ProfilePath "%LogonServer%\Profiles$\%username%"
