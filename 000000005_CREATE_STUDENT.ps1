@@ -36,7 +36,7 @@ foreach ($stu in $students) {
         $enabled = 0
     }
 
-    New-ADUser -Name $stu.TID  -DisplayName "$($stu.FIRSTNAME) $($stu.LASTNAME)" -AccountPassword (ConvertTo-SecureString ($stu.PASSWORD) -AsPlainText -Force) -Enabled $enabled -Description "Student" -ProfilePath "%LogonServer%\Profiles$\%username%"
+    New-ADUser -Name $stu.TID  -GivenName "$($stu.FIRSTNAME) $($stu.LASTNAME)" -AccountPassword (ConvertTo-SecureString ($stu.PASSWORD) -AsPlainText -Force) -Enabled $enabled -Description "Student" -ProfilePath "%LogonServer%\Profiles$\%username%"
 
     $stuClass = $stu.CLASS
     Add-ADGroupMember -Identity "class_$stuClass" -Members $stu.TID

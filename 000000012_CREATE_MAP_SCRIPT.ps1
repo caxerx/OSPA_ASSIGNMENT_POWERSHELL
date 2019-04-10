@@ -1,0 +1,1 @@
+"net use Z: \\PECServer\pigeonholes\%username%" > "\\PECServer\NETLOGON\MOUNT_PIGEONHOLES.bat"

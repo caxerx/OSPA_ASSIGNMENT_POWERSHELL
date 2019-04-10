@@ -4,7 +4,6 @@ foreach ($s in $staffs) {
     $uname = Get-TrainerUsername $s
     $pw = Get-TrainerPassword $s
     
-    New-ADUser -Name $uname -DisplayName $s.Full_Name -AccountPassword (ConvertTo-SecureString $pw -AsPlainText -Force) -Enabled $True -Description "Trainer" -Path "OU=Trainer,DC=IT2A023,DC=HK" -ProfilePath "%LogonServer%\Profiles$\%username%"
-    Add-ADGroupMember -Identity "CN=PECTrainer,OU=Trainer,DC=IT2A023,DC=HK" -Members "CN=$uname,OU=Trainer,DC=IT2A023,DC=HK"
+    New-ADUser -Name $uname -DisplayName $s.Full_Name -AccountPassword (ConvertTo-SecureString $pw -AsPlainText -Force) -Enabled $True -Description "Trainer" -ProfilePath "%LogonServer%\Profiles$\%username%" -ScriptPath "MOUNT_PIGEONHOLES.bat"
+    Add-ADGroupMember -Identity PECTrainer -Members $uname
 }
-
